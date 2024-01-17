@@ -1,0 +1,70 @@
+<app-header></app-header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Your Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="product-details">
+          <img src="{{productDetail.image}}" alt="">
+          <h3>{{productDetail.name}}</h3>
+          <span>{{productDetail.price}}$</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <form id="paymentForm">
+          <h4 class="text-left">Thông tin thanh toán</h4>
+
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" value="1" min="1">
+          </div>
+
+          <div class="form-group">
+            <label for="color">Color:</label>
+            <select class="form-control" id="color" name="color">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="paymentMethod">Payment Method:</label>
+            <select class="form-control" id="paymentMethod" name="paymentMethod">
+              <option value="creditCard">Credit Card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-warning">Buy Now !</button>
+        </form>
+      </div>
+    </div>
+    <h4>Sản phẩm liên quan</h4>
+  </div>
+</div>
+
+<app-products></app-products>
+
+<app-footer></app-footer>

@@ -1,0 +1,8 @@
+body {
+    padding-bottom: 50px; /* Để tránh việc footer che phủ nội dung cuối cùng */
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }

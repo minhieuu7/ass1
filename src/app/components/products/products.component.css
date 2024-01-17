@@ -1,0 +1,36 @@
+/* Custom styles for your product cards */
+#content {
+    padding: 20px;
+  }
+  
+  .product1 {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .product1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .sales, .btn-primary {
+    margin-top: 10px;
+  }
+  
+  /* Additional styling for responsiveness */
+
+  

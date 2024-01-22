@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { Router, RouterOutlet } from '@angular/router';
-import { ProductDetailComponent } from '../../product-detail/product-detail.component';
+import { ProductDetailComponent } from '../../components/product-detail/product-detail.component';
 import { ProductsComponent } from '../../components/products/products.component';
-import { SlideComponent } from '../../coponents/slide/slide.component';
+import { SlideComponent } from '../../components/slide/slide.component';
 
 @Component({
   selector: 'app-main-layout',

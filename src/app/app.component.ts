@@ -5,7 +5,7 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
-import { SlideComponent } from './coponents/slide/slide.component';
+import { SlideComponent } from './components/slide/slide.component';
 
 @Component({
   selector: 'app-root',

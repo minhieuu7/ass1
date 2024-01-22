@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ProductService } from '../services/product/product.service';
+import { ProductService } from '../../services/product/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent } from '../layouts/header/header.component';
-import { FooterComponent } from '../layouts/footer/footer.component';
-import { ProductsComponent } from '../components/products/products.component';
+import { HeaderComponent } from '../../layouts/header/header.component';
+import { FooterComponent } from '../../layouts/footer/footer.component';
+import { ProductsComponent } from '../products/products.component';
 
 @Component({
   selector: 'app-product-detail',

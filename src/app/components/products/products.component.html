@@ -1,13 +1,17 @@
-<div id="content">
+<div id="content" class="mt-4">
   <div class="container">
     <div class="row">
       <div *ngFor="let item of productList" class="product1 col-6 col-sm-4 col-md-4 col-lg-3">
-        <img src="{{item.image}}" alt="">
-        <a href="products-list/{{item.id}}"><h3>{{item.name}}</h3></a>
-        <span class="price">{{item.price}}</span>
-        <p>{{item.description}}</p>
-        <br>
-        <button>Buy Now !</button>
+        <div class="product-item card">
+          <img src="{{item.image}}" class="card-img-top" alt="{{item.name}}">
+          <div class="card-body">
+            <a href="products-list/{{item.id}}"><h3 class="card-title">{{item.name}}</h3></a>
+            <p class="card-text">{{item.description}}</p>
+            <span class="price">{{item.price}}</span>
+            <br>
+            <a href="#" class="btn btn-primary">Buy Now!</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
